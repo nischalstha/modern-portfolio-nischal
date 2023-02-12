@@ -72,13 +72,13 @@ export default class Room {
             //     child.name === "Flower1" ||
             //     child.name === "Flower2"
             // ) {
-            //     child.scale.set(0, 0, 0);
+            //     child.scale.set(0, 1, 1);
             // }
 
             child.scale.set(0, 0, 0);
             if (child.name === "Cube") {
-                // child.scale.set(1, 1, 1);
-                child.position.set(0, -1, 0);
+                child.scale.set(0, 1, 1);
+                child.position.set(1, 1, 1, 1);
                 child.rotation.y = Math.PI / 4;
             }
 
@@ -87,7 +87,7 @@ export default class Room {
 
         const width = 0.5;
         const height = 0.7;
-        const intensity = 1;
+        const intensity = 10;
         const rectLight = new THREE.RectAreaLight(
             0xffffff,
             intensity,

@@ -53,7 +53,7 @@ export default class Preloader extends EventEmitter {
             y: 2.8,
             z: 2.5,
             ease: "back.out(1)",
-            duration: 0.3
+            duration: 0.3,
           })
           .to(this.room.position, {
             x: -1,
